@@ -22,7 +22,9 @@ let endpoints = {
     taskList,
     tasks,
     task,
-    webhooks
+    webhooks,
+    milestones,
+    milestone
 };
 
 export default endpoints;

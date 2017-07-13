@@ -6,6 +6,7 @@ import {projects, project} from './projects';
 import {timeEntries} from './timeEntries';
 import {taskLists, taskList} from './taskLists';
 import {tasks, task} from './tasks';
+import {milestones} from './milestones';
 import {webhooks} from './webhooks';
 
 let endpoints = {

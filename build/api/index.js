@@ -23,6 +23,8 @@ var _taskLists = require('./taskLists');
 
 var _tasks = require('./tasks');
 
+var _milestones = require('./milestones');
+
 var _webhooks = require('./webhooks');
 
 var endpoints = {

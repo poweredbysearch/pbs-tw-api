@@ -7,3 +7,7 @@ export const milestones = Object.assign(
         basePath: '/milestones',
     }
 );
+
+export function milestone (id) {
+    return {};
+}

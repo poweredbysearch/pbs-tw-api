@@ -1,0 +1,156 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "teamwork-api@0.0.46",
+        "scope": null,
+        "escapedName": "teamwork-api",
+        "name": "teamwork-api",
+        "rawSpec": "0.0.46",
+        "spec": "0.0.46",
+        "type": "version"
+      },
+      "/Users/poweredbysearch/pbs/internal-data-service"
+    ]
+  ],
+  "_from": "teamwork-api@0.0.46",
+  "_id": "teamwork-api@0.0.46",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/teamwork-api",
+  "_nodeVersion": "5.0.0",
+  "_npmUser": {
+    "name": "nmarks",
+    "email": "info@nathanmarks.io"
+  },
+  "_npmVersion": "3.3.9",
+  "_phantomChildren": {
+    "amdefine": "1.0.1",
+    "babel-plugin-constant-folding": "1.0.1",
+    "babel-plugin-dead-code-elimination": "1.0.2",
+    "babel-plugin-eval": "1.0.1",
+    "babel-plugin-inline-environment-variables": "1.0.1",
+    "babel-plugin-jscript": "1.0.4",
+    "babel-plugin-member-expression-literals": "1.0.1",
+    "babel-plugin-property-literals": "1.0.1",
+    "babel-plugin-proto-to-assign": "1.0.4",
+    "babel-plugin-react-constant-elements": "1.0.3",
+    "babel-plugin-react-display-name": "1.0.3",
+    "babel-plugin-remove-console": "1.0.1",
+    "babel-plugin-remove-debugger": "1.0.1",
+    "babel-plugin-runtime": "1.0.7",
+    "babel-plugin-undeclared-variables-check": "1.0.2",
+    "babel-plugin-undefined-to-void": "1.1.6",
+    "brace-expansion": "1.1.6",
+    "chalk": "1.1.3",
+    "convert-source-map": "1.3.0",
+    "debug": "2.6.0",
+    "esutils": "2.0.2",
+    "fs-readdir-recursive": "0.1.2",
+    "get-stdin": "4.0.1",
+    "is-finite": "1.0.2",
+    "is-integer": "1.0.6",
+    "lodash": "3.10.1",
+    "os-tmpdir": "1.0.2",
+    "output-file-sync": "1.1.2",
+    "path-exists": "1.0.0",
+    "path-is-absolute": "1.0.1",
+    "private": "0.1.6",
+    "regenerator": "0.8.40",
+    "regexpu": "1.3.0",
+    "resolve": "1.2.0",
+    "shebang-regex": "1.0.0",
+    "slash": "1.0.0",
+    "source-map": "0.5.6",
+    "to-fast-properties": "1.0.2",
+    "trim-right": "1.0.1",
+    "try-resolve": "1.0.1",
+    "user-home": "1.1.1"
+  },
+  "_requested": {
+    "raw": "teamwork-api@0.0.46",
+    "scope": null,
+    "escapedName": "teamwork-api",
+    "name": "teamwork-api",
+    "rawSpec": "0.0.46",
+    "spec": "0.0.46",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teamwork-api/-/teamwork-api-0.0.46.tgz",
+  "_shasum": "fcc52c161bb95db117036a2ad17e2bb407b8a869",
+  "_shrinkwrap": null,
+  "_spec": "teamwork-api@0.0.46",
+  "_where": "/Users/poweredbysearch/pbs/internal-data-service",
+  "bugs": {
+    "url": "https://github.com/nathanmarks/teamwork-api-client/issues"
+  },
+  "dependencies": {
+    "babel-core": "^5.6.2",
+    "babel-plugin-object-assign": "^1.1.0",
+    "bluebird": "^2.9.30",
+    "i": "^0.3.3",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.6",
+    "request": "^2.57.0"
+  },
+  "description": "**WIP** A Teamwork (teamwork.com) API client.",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "dependency-check": "^2.4.0",
+    "eslint": "^0.22.1",
+    "faucet": "0.0.1",
+    "nsp": "^1.0.1",
+    "precommit-hook": "^2.0.1",
+    "rimraf": "^2.3.4",
+    "tape": "^4.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "fcc52c161bb95db117036a2ad17e2bb407b8a869",
+    "tarball": "https://registry.npmjs.org/teamwork-api/-/teamwork-api-0.0.46.tgz"
+  },
+  "gitHead": "910818868c4e0c7515461a3586a8706911dbc8bb",
+  "homepage": "https://github.com/nathanmarks/teamwork-api-client#readme",
+  "main": "build/index.js",
+  "maintainers": [
+    {
+      "name": "nmarks",
+      "email": "info@nathanmarks.io"
+    }
+  ],
+  "name": "teamwork-api",
+  "optionalDependencies": {},
+  "pre-commit": [
+    "check"
+  ],
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanmarks/teamwork-api-client.git"
+  },
+  "scripts": {
+    "build": "babel --plugins object-assign -d build source -s",
+    "check": "npm run deps && npm outdated --depth 0",
+    "clean": "rimraf build",
+    "cov": "npm run cov:clean && npm run cov:generate",
+    "cov:clean": "rimraf coverage",
+    "cov:generate": "babel-node node_modules/.bin/isparta cover --report text --report html test/index.js",
+    "deps": "npm run missing && npm run extra && npm run ok",
+    "extra": "dependency-check package.json --extra --ignore",
+    "init": "rimraf .validate.json && rimraf .jshintrc",
+    "lint": "eslint source && eslint test",
+    "missing": "dependency-check package.json",
+    "ok": "echo 'OK if the dependencies above are all devDependencies.' && echo 'Clean up any unused dependencies.'",
+    "prebuild": "npm run clean",
+    "precheck": "npm run validate",
+    "prepublish": "npm run build",
+    "test": "babel-node test/index.js",
+    "validate": "npm run lint && npm run build && npm test",
+    "validate-dev": "npm run lint && npm run build && npm test | faucet"
+  },
+  "version": "0.0.46"
+}

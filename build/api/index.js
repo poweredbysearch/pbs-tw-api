@@ -23,6 +23,8 @@ var _taskLists = require('./taskLists');
 
 var _tasks = require('./tasks');
 
+var _completedtasks = require('./completedtasks');
+
 var _milestones = require('./milestones');
 
 var _webhooks = require('./webhooks');
@@ -40,7 +42,11 @@ var endpoints = {
     taskList: _taskLists.taskList,
     tasks: _tasks.tasks,
     task: _tasks.task,
-    webhooks: _webhooks.webhooks
+    completedtask: _completedtasks.completedtask,
+    completedtasks: _completedtasks.completedtasks,
+    webhooks: _webhooks.webhooks,
+    milestones: _milestones.milestones,
+    milestone: _milestones.milestone
 };
 
 exports['default'] = endpoints;

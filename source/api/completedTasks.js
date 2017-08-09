@@ -1,13 +1,13 @@
 import requestFns from './functions';
 import crud from './crud';
 
-export const completedtasks = Object.assign(
+export const completedTasks = Object.assign(
     Object.create(crud),
     {
         basePath: '/completedtasks',
     }
 );
 
-export function completedtask (id) {
+export function completedTask (id) {
     return {};
 }

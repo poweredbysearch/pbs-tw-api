@@ -6,7 +6,7 @@ import {projects, project} from './projects';
 import {timeEntries} from './timeEntries';
 import {taskLists, taskList} from './taskLists';
 import {tasks, task} from './tasks';
-import {completedtasks, completedtask} from './completedTasks';
+import {completedTasks, completedTask} from './completedTasks';
 import {milestones, milestone} from './milestones';
 import {webhooks} from './webhooks';
 
